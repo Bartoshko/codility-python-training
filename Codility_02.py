@@ -1,3 +1,5 @@
+#  works 100%
+
 A = []
 
 def solution(A, K):

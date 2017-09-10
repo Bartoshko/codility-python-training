@@ -1,3 +1,5 @@
+# works 100%
+
 def solution(X, Y, D):
 	if (Y - X) % D == 0:
 		return int(round(Y - X) / D)
