@@ -4,7 +4,7 @@ string_1 = '{[()()]}'
 string_2 =  '([)()]'
 string_3 = '(()(((())(()))))'
 
-def isValidPair(left, right):
+def Paired(left, right):
 	if left == '(' and right == ')':
 		return True
 	if left == '[' and right == ']':
@@ -21,7 +21,7 @@ def solution(S):
 			if len(stack) == 0:
 				return 0
 			last = stack.pop()
-			if not isValidPair(last, symbol):
+			if not Paired(last, symbol):
 				return 0
 	if len(stack) != 0:
 		return 0 
